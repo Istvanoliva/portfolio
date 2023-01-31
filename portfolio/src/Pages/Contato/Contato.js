@@ -1,9 +1,12 @@
 import React from 'react';
 
+import Header from '../../Components/Header/Header';
+
 function Contato() {
     return (
         <div>
-            <h1>Hello !</h1>
+            <Header />
+            <h1>Contato !</h1>
         </div>
     );
 }
