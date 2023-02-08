@@ -140,7 +140,7 @@ export const Projects = [
         description: 'xxxxxxxxxxxxxxxxxxxxxxx',
         url: 'url.******',
         category: 'Back-end',
-        tolls: ['Node.js', 'Javascript'],
+        tolls: ['Node.js', 'Typescript'],
         git: 'KKKK',
     },
     {
@@ -149,7 +149,7 @@ export const Projects = [
         description: 'OPP',
         url: 'url.******',
         category: 'Back-end',
-        tolls: ['Node.js', 'Javascript'],
+        tolls: ['Node.js', 'Typescript'],
         git: 'KKKK',
     },
     {
@@ -158,7 +158,7 @@ export const Projects = [
         description: 'xxxxxxxxxxxxxxxxxxxxxxx',
         url: 'url.******',
         category: 'Back-end',
-        tolls: ['Node.js', 'Express', 'Javascript', 'Docker' , 'MySQL', 'Sequelize', 'React'],
+        tolls: ['Node.js', 'Express', 'Typescript', 'Docker' , 'MySQL', 'Sequelize', 'React'],
         git: 'KKKK',
     },
     {
@@ -167,7 +167,7 @@ export const Projects = [
         description: 'xxxxxxxxxxxxxxxxxxxxxxx',
         url: 'url.******',
         category: 'Back-end',
-        tolls: ['Node.js', 'Javascript', 'Express.js', 'MongoDb'],
+        tolls: ['Node.js', 'Javascript', 'MongoDb'],
         git: 'KKKK',
     },
     {
@@ -176,7 +176,7 @@ export const Projects = [
         description: 'xxxxxxxxxxxxxxxxxxxxxxx',
         url: 'url.******',
         category: 'Back-end',
-        tolls: ['Node.js', 'Javascript', 'Express.js', 'MongoDb', 'Mongoose'],
+        tolls: ['Node.js', 'Typescript', 'Express.js', 'MongoDb', 'Mongoose'],
         git: 'KKKK',
     },
     {
