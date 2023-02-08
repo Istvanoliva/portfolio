@@ -1,13 +1,13 @@
 import Swal from 'sweetalert2/dist/sweetalert2.js';
 
 export const checkInputs = (name, message, email) => {
-    if (!name || !message || !email ) return Swal.fire({
+    if (!name || !message || !email ) throw Swal.fire({
         title: 'Atenção!',
         text: 'Preencha todos os campos!',
         icon: 'warning',
         confirmButtonText: 'Okay'
     });
-    if (!email.includes('@' || '.com')) return Swal.fire({
+    if (!email.includes('@' || '.com')) throw Swal.fire({
         title: 'Atenção!',
         text: 'Digite um email válido!',
         icon: 'warning',
