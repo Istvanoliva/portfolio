@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import './Contato.css';
 
 import Header from '../../Components/Header/Header';
 
@@ -6,8 +7,7 @@ import { checkInputs } from '../../utils/swal/swalEmailjs';
 import { templateId, userId, serviceId  } from '../../utils/emailsJs/user';
 import sendEmailjs from '../../utils/emailsJs/sendEmail';
 
-import gitHubLogo from '../../images/GitHub_Logo.png';
-import linkedin from '../../images/linkedin.png';
+import img from '../../images/icons-email.png';
 
 function Contato() {
     const INITAL_STATE = { name: '', email: '', message: '' };
@@ -30,66 +30,60 @@ function Contato() {
     return (
         <div>
             <Header />
-            <section className="email-section">
-                <h1>Contato !</h1>
-                <div>
-                    <h3>Envie uma mensagem!</h3>
+            <div id="image-msg" >
+                <div id="image-bg">
+                    <img src={ img } id="image" />
                 </div>
+            </div>
+            <div>
+                <h2 id="contact-title">Mande sua mensagem<br />
+                    Como posso te ajudar hoje?</h2>
+            </div>
+            <form ref={ form } onSubmit={ sendEmail } className="form-contato">
 
-                <form ref={ form } onSubmit={ sendEmail }>
-                    <label htmlFor="name">
-                      Nome:
-                        <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            placeholder="Digite seu nome..."
-                            onChange={ handleChange }
-                            value={ name }
-                        />
-                    </label>
-
-                    <label htmlFor="email">
-                      Email:
-                        <input
-                            type="text"
-                            id="email"
-                            name="email"
-                            placeholder="Digite seu email..."
-                            onChange={ handleChange }
-                            value={ email }
-                        />
-                    </label>
-
-                    <label htmlFor="message">
-                      Mensagem:
-                        <textarea
-                            type="text"
-                            id="message"
-                            name="message"
-                            rows="6"
-                            placeholder="Digite sua mensagem..."
-                            value={ message }
-                            onChange={ handleChange }
-                        />
-                    </label>
-
-                    <button className="sub-btn" type="submit">Enviar!</button>
-                </form>
-
-                <section className="links-container">
-                    <div>
-                        <a href="https://github.com/istvanoliva" target="_blank" rel="noreferrer">
-                            <img src={ gitHubLogo } alt="Link para Github" />
-                        </a>
-                    </div>
-                    <div>
-                        <a href="https://www.linkedin.com/in/istvan-oliva/" target="_blank" rel="noreferrer">
-                            <img src={ linkedin } alt="Link para Linkedin" />
-                        </a>
-                    </div>
-                </section>
-            </section>
+                <div className="input-text">
+                    <label htmlFor="name">Nome:</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Digite seu nome..."
+                        onChange={ handleChange }
+                        value={ name }
+                        className="input"
+                        required
+                    />
+                            
+                </div>
+                <div className="input-text">
+                    <label htmlFor="email">Email:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Digite seu email..."
+                        onChange={ handleChange }
+                        value={ email }
+                        className="input"
+                        required
+                    />
+                </div>
+                <div className='input-textarea'>
+                        
+                    <label htmlFor="message">Mensagem:</label>
+                    <textarea
+                        type="text"
+                        id="message"
+                        name="message"
+                        rows="8"
+                        value={ message }
+                        onChange={ handleChange }
+                        required
+                    />
+                        
+                </div>
+                <button type="submit" className="btn-submit">Enviar!</button>
+            </form>
         </div>
     );
 }
