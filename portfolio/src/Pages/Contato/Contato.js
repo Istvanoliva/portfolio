@@ -1,11 +1,11 @@
 import React, { useState, useRef } from 'react';
-import './Contato.css';
 
 import Header from '../../Components/Header/Header';
 
-import { checkInputs } from '../../utils/swal/swalEmailjs';
 import { templateId, userId, serviceId  } from '../../utils/emailsJs/user';
 import sendEmailjs from '../../utils/emailsJs/sendEmail';
+
+import './Contato.css';
 
 import img from '../../images/icons-email.png';
 
@@ -22,7 +22,6 @@ function Contato() {
 
     const sendEmail = (event) => {
         event.preventDefault();
-        checkInputs(name, message, email);
         sendEmailjs(serviceId, templateId, form.current, userId);
         setState(INITAL_STATE);
     };
