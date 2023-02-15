@@ -29,8 +29,8 @@ function Contato() {
     return (
         <div>
             <Header />
-            <div id="image-msg" >
-                <div id="image-bg">
+            <div className="image-theme" >
+                <div className="image-bg">
                     <img src={ img } id="image" />
                 </div>
             </div>
@@ -51,6 +51,7 @@ function Contato() {
                         value={ name }
                         className="input"
                         required
+                        autoFocus
                     />
                             
                 </div>
