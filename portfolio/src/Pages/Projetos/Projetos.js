@@ -5,6 +5,11 @@ import Header from '../../Components/Header/Header';
 import ProjectCard from '../../Components/ProjectCard/ProjectCard';
 import { Projects, stacks, categories } from '../../Projects/Projects';
 
+import clearImage from '../../images/icon-broom.png';
+import magnifer from '../../images/magnifer.png';
+import img from '../../images/icon-projct.png';
+import './Projetos.css';
+
 function Projetos() {
     const [ projects, setProjects ] = useState(Projects);
     const [ searchName, setSearchName ] = useState('');
@@ -37,9 +42,13 @@ function Projetos() {
     return (
         <div>
             <Header />
-            <h1>Projetos</h1>    
-            <label htmlFor="search">
-                Buscar projetos: 
+            <div className="image-theme">
+                <div className="image-bg">
+                    <img src={ img } className="image-content" />
+                </div>
+            </div>
+            <div className='search'>
+                <label htmlFor="search"><h2>Buscar projetos :</h2></label>
                 <input
                     type="text"
                     id="search"
@@ -47,35 +56,46 @@ function Projetos() {
                     placeholder="Buscar por nome"
                     onChange={ ({target}) => setSearchName(target.value) }
                     value={ searchName }
+                    autoFocus
                 />
-            </label>
 
-            <Select
-                placeholder={ category }
-                options={ categories }
-                name="category"
-                defaultValue={ category }
-                isClearable={ true }
-                isSearchable={ true }
-                isMulti={ false }
-                value={ category }
-                onChange={ (target) => setCategory(target.value) }
-            />
+                <Select
+                    placeholder="Stacks"
+                    options={ categories }
+                    name="category"
+                    defaultValue={ category }
+                    isClearable={ true }
+                    isSearchable={ true }
+                    isMulti={ false }
+                    value={ category }
+                    onChange={ (target) => setCategory(target.value) }
+                    className="react-select"
+                /> 
 
-            <Select
-                options={ stacks }
-                name="stacks"
-                isClearable={ true }
-                isSearchable={ true }
-                isMulti={ true }
-                value={ options }
-                onChange={ (target) => (setOptions(target), setProjects(Projects)) }
-            />
+                <Select
+                    placeholder="Javascript, Python, etc..."
+                    options={ stacks }
+                    name="stacks"
+                    isClearable={ true }
+                    isSearchable={ true }
+                    isMulti={ true }
+                    value={ options }
+                    onChange={ (target) => (setOptions(target), setProjects(Projects)) }
+                    className="react-select"
+                />
 
-            <button onClick={ () => optionsFilter() }>Filtrar</button>
-            <button onClick={ () => clear() }>Limpar</button>
-
-            <div>
+                <div className="btn-filters">
+                    <button onClick={ () => optionsFilter() } className="btn-filter-content">
+                        <img src={ magnifer } className="btn-img" />
+                    Filtrar
+                    </button>
+                    <button onClick={ () => clear() } className="btn-filter-content">
+                        <img src={ clearImage } className="btn-img" />
+                    Limpar
+                    </button>
+                </div>
+            </div>
+            <div className='projects-div'>
                 {
                     !projects.length ?
                         <span>Nenhum projeto encontrado</span> : projects
