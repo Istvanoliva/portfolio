@@ -1,33 +1,38 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import './ProjectCard.css';
+
 function ProjectCard({ name, img, description, url, category, tolls, git }) {
     return (
-        <div>
-            <div>
-                <h3>{ name }</h3>
+        <div className="project-card">
+            <div className="title-div">
+                <h3 className="title-card">{ name }</h3>
+                <p>{ category }</p>
             </div>
-            <div>
-                {/* <img src={ img } alt={ x } /> */}
-                <p>{ img }</p>
+            <div className="img-div">
+                <img src={ img } className="img-card"/>
             </div>
             <div>
                 <p>{ description }</p>
             </div>
-            <div>
-                <p>{ url }</p>
+            <div className="tools">
+                { tolls.map((item) => <div key={ item } className="span">{ item }</div>) }
             </div>
-            <div>
-                <p>{ category }</p>
-            </div>
-            <div>
-                <p>{ tolls }</p>
-            </div>
-            <div>
-                <p>{ tolls }</p>
-            </div>
-            <div>
-                <p>{ git }</p>
+            <div className="btn-projects">
+                <a href={ git } target="_blank" rel="noreferrer">
+                    <button>
+                    Github
+                    </button>
+                </a>
+                {
+                    url.length ?
+                        <a href={ url } target="_blank" rel="noreferrer">
+                            <button onClick={ () => alert('Em construção ....') }>
+                            Site
+                            </button>
+                        </a> : undefined
+                }
             </div>
         </div>
     );
