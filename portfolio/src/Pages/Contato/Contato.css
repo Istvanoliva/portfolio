@@ -26,8 +26,6 @@
 }
 
 .btn-submit {
-    text-align: center;
-    height: 38px;
     grid-column-start: 1;
     grid-column-end: 3;
 }

@@ -18,6 +18,7 @@
 
 .btn-filter-content {
     display: flex;
+    max-width: 100px;
 }
 
 .projects-div {
