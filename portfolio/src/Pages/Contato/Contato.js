@@ -31,7 +31,7 @@ function Contato() {
             <Header />
             <div className="image-theme" >
                 <div className="image-bg">
-                    <img src={ img } id="image" />
+                    <img src={ img } className="image-content"/>
                 </div>
             </div>
             <div>
