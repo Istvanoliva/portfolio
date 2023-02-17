@@ -1,0 +1,98 @@
+.home {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-profile {
+  margin: 50px auto;
+  padding: 30px;
+  border: 1px solid #474b4e;
+  border-radius: 8px;
+  width: 400px;
+}
+
+.card-profile:hover {
+    border: 1px solid rgb(126, 3, 156, 0.9);
+    box-shadow: 0px 0px 10px rgb(126, 3, 156, 0.9);
+    transition: 0.2s;
+    transform: scale(1.05);
+}
+
+.title {
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.stack {
+    margin: 0;
+    font-family: 'Phudu', cursive;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.profile {
+  font-family: 'Phudu', cursive;
+  font-family: 'Signika Negative', sans-serif;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  text-align: center;
+  color: #80878b;
+}
+
+#div-profile {
+  border-radius: 100%;
+  overflow: hidden;
+  height: 300px;
+  width: 300px;
+  background: black;
+}
+
+.image-profile {
+  width: 100%;
+  height: 108%;
+}
+
+.paragraph {
+  margin: 10px;
+}
+
+.links-container {
+  justify-content: center;
+  margin: auto;
+  display: flex;
+}
+
+.btn-contact {
+  display: flex;
+  max-width: 100px;
+}
+
+.contact-btn {
+  height: 19px;
+  width: 19px;
+  margin-right: 4px;
+  margin-bottom: 1px;
+}
+
+#linkedin {
+  background-color: #30363D;
+  border: 1px solid #21162D;
+  color: #C9D1D9;
+}
+
+.show-hide {
+  animation-direction: alternate-reverse;
+  animation: show-hide 1.3s infinite;
+}
+
+@keyframes show-hide {
+    0%, 40% {
+      opacity: 1;
+    }
+    60%, 100% {
+      opacity: 0;
+    }
+  }
