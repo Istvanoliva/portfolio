@@ -7,7 +7,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 4vh;
+  padding: 1vh;
 }
 
 .header-nav {
@@ -21,3 +21,17 @@
   height: 40px;
   width: 40px;
 }
+
+.btn-header {
+  background-color: #161B22;
+  border: 1px solid #2aa33a;
+  font-weight: 600;
+  position: relative;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  opacity: 1;
+}
+  
