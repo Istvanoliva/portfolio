@@ -1,41 +1,41 @@
 .project-card {
-    align-items: center;
-    border: 1px solid #474b4e;
-    border-radius: 8px;
-    color: #80878b;
-    display: grid;
-    justify-content: center;
-    max-width: 300px;
-    min-width: 300px;
-    max-height: 450px;
-    margin: 10px;
-    padding: 30px;
+  align-items: center;
+  border: 1px solid #474b4e;
+  border-radius: 8px;
+  color: #80878b;
+  display: grid;
+  justify-content: center;
+  max-width: 300px;
+  min-width: 300px;
+  max-height: 450px;
+  margin: 10px;
+  padding: 30px;
 }
 
 .project-card:hover {
-    border: 1px solid rgb(126, 3, 156, 0.9);
-    box-shadow: 0px 0px 10px rgb(126, 3, 156, 0.9);
-    transition: 0.2s;
-    transform: scale(1.05);
+  border: 1px solid rgb(126, 3, 156, 0.9);
+  box-shadow: 0px 0px 10px rgb(126, 3, 156, 0.9);
+  transition: 0.2s;
+  transform: scale(1.05);
 }
 
 .title-card {
-    color: #fff;
+  color: #fff;
 }
 
 .title-div {
-    text-align: center;
-    padding-bottom: 20px;
+  text-align: center;
+  padding-bottom: 20px;
 }
 
 .img-div {
-    margin: auto;
-    background-color: #161B22;
-    box-sizing: border-box;
-    padding: 20px;  
-    border-radius: 100%;
-    width: 120px;
-    height: 120px;
+  margin: auto;
+  background-color: #161B22;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 100%;
+  width: 120px;
+  height: 120px;
 }
 
 .img-card {
@@ -46,19 +46,19 @@
 }
 
 .span {
-    text-align: center;
-    margin: 5px;
+  text-align: center;
+  margin: 5px;
 }
 
 .tools {
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .btn-projects {
-    margin-top: 10px;
-    text-align: center;
+  margin-top: 10px;
+  text-align: center;
 }
