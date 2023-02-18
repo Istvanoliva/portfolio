@@ -59,7 +59,7 @@ function Projetos() {
                 />
 
                 <Select
-                    placeholder="Stacks"
+                    placeholder={ category }
                     options={ categories }
                     name="category"
                     defaultValue={ category }
