@@ -2,33 +2,27 @@ import { Link } from 'react-router-dom';
 import React from 'react';
 import '../Header/Header.css';
 
-// import img from '../../images/icon-home.png';
+import menu from '../../images/icon-menu.png';
 
 function Header() {
     return (
         <header className="header-container">
-            <div className="link-container">
+            <div className="inicio">
                 <Link to='/'>
-                    <button className="btn-header">
-                        Início
-                    </button>                    
+                Início
                 </Link>
             </div>
-            <div className="header-nav">
-                <div className="link-container">
-                    <Link to='/projetos'>
-                        <button className="btn-header">
-                    Projetos
-                        </button>
-                    </Link>
-                </div>
-                <div className="link-container">
-                    <Link to='/contato'>
-                        <button className="btn-header">
-                    Contato
-                        </button>
-                    </Link>
-                </div>
+            <input type="checkbox" id="toggle" />
+            <label htmlFor="toggle" id="toggle-label"><img src={ menu } className="menu-img" /></label>
+            <div className="menu">
+                <ul className="list">
+                    <li><Link to='/projetos'>
+                        Projetos
+                    </Link></li>
+                    <li><Link to='/contato'>
+                        Contato
+                    </Link></li>
+                </ul>
             </div>
         </header>
     );
