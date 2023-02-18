@@ -19,7 +19,7 @@ function Projetos() {
     const optionsFilter = () => {
         setProjects(Projects);
         if (!options.length) return;
-        
+
         const stacks = options.map((item) => item.value);
         const arrays = [];
 
@@ -48,7 +48,7 @@ function Projetos() {
                 </div>
             </div>
             <div className='search'>
-                <label htmlFor="search"><h2>Buscar projetos :</h2></label>
+                <h2>Buscar projetos :</h2>
                 <input
                     type="text"
                     id="search"

@@ -1,35 +1,35 @@
 .search {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .react-select {
-    color: black;
-    width: 300px;
-    margin: 20px 0px 0px 0px;
+  color: black;
+  width: 300px;
+  margin: 20px 0px 0px 0px;
 }
 
 .btn-filters {
-    margin: 10px;
-    display: flex;
+  margin: 10px;
+  display: flex;
 }
 
 .btn-filter-content {
-    display: flex;
-    max-width: 100px;
+  display: flex;
+  max-width: 100px;
 }
 
 .projects-div {
-    justify-content: center;
-    align-self: center; 
-    display: flex;
-    flex-wrap: wrap;
-    margin: 50px;
+  justify-content: center;
+  align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px;
 }
 
 .image-content {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
