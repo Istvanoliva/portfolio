@@ -51,7 +51,6 @@ function Contato() {
                         value={ name }
                         className="input"
                         required
-                        autoFocus
                     />
                             
                 </div>

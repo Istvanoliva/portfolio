@@ -56,7 +56,6 @@ function Projetos() {
                     placeholder="Buscar por nome"
                     onChange={ ({target}) => setSearchName(target.value) }
                     value={ searchName }
-                    autoFocus
                 />
 
                 <Select
